@@ -1,0 +1,53 @@
+2025-07-01 19:43:07.242 | INFO | PID:321 | model_file_sync.before_run:189 - aisrv model_file_sync, use modelpool, use_which_deep_learning_framework is pytorch
+2025-07-01 19:43:07.245 | INFO | PID:321 | model_file_sync.before_run:195 - model_file_sync process pid is 321
+2025-07-01 19:43:07.247 | INFO | PID:321 | model_file_sync.make_model_dirs:138 - model_file_sync mkdir /data/ckpt/gorge_walk_v2_dynamic_programming/plugins success
+2025-07-01 19:43:07.250 | INFO | PID:321 | model_file_sync.make_model_dirs:144 - model_file_sync mkdir /data/ckpt/gorge_walk_v2_dynamic_programming/models /data/ckpt/gorge_walk_v2_dynamic_programming/plugins success
+2025-07-01 19:43:07.252 | INFO | PID:321 | model_file_sync.make_model_dirs:153 - model_file_sync mkdir /data/ckpt/gorge_walk_v2_dynamic_programming/convert_models_aisrv success
+2025-07-01 19:43:07.255 | INFO | PID:321 | monitor_proxy.__init__:36 - aisrv ppid is 140561123608384
+2025-07-01 19:43:07.372 | INFO | PID:298 | aisrv_server_standard.start_aisrv_handler:484 - aisrv AiServer AiSrvHandle with address: 172.19.0.6:5566 start
+2025-07-01 19:43:07.377 | INFO | PID:298 | aisrv_server_standard.before_run:604 - aisrv AiServer is start success at 0.0.0.0:8000, pid is 298, run_mode is train, self_play is False
+2025-07-01 19:43:07.386 | INFO | PID:325 | monitor_proxy_process.before_run:73 - aisrv monitor_proxy process start success at pid is 325
+2025-07-01 19:43:07.392 | INFO | PID:323 | model_wrapper_common.create_standard_model_wrapper:99 - aisrv policy_name train_one, algo dynamic_programming, model_wrapper is StandardModelWrapperPytorch
+2025-07-01 19:43:07.402 | INFO | PID:327 | monitor_proxy_process.before_run:73 - aisrv monitor_proxy process start success at pid is 327
+2025-07-01 19:43:07.406 | INFO | PID:323 | multi_model_common.init_load_models:240 - aisrv predict just no model_pool files or copy_model_files failed, please check
+2025-07-01 19:43:07.409 | INFO | PID:323 | actor_proxy_local.before_run:663 - predict policy_name: train_one, start success at pid 323, on-policy/off-policy is off-policy, actor_receive_cost_time_ms: 1, predict_batch_size: 1
+2025-07-01 19:43:07.409 | INFO | PID:326 | kaiwu_rl_helper_standard.__init__:134 - aisrv kaiwu_rl_helper start at pid 326, ppid is 140561123608384, thread id is -1
+2025-07-01 19:43:07.412 | INFO | PID:326 | aisrv_server_standard.before_run:794 - aisrv aisrvhandle use kaiwu_rl_helper: <KaiWuRLStandardHelper(kaiwu_rl_helper_0, initial daemon)>
+2025-07-01 19:43:07.412 | INFO | PID:323 | actor_proxy_local.predict_stat:482 - aisrv predict now predict count is 0
+2025-07-01 19:43:07.416 | INFO | PID:326 | aisrv_server_standard.before_run:797 - aisrv aisrvhandle established connect to 172.19.0.6:5566, slot id is 0, min_slot_id is 0
+2025-07-01 19:43:07.422 | INFO | PID:326 | aisrv_server_standard.before_run:806 - aisrv aisrvhandle current_actor_addrs is ['127.0.0.1:8888'], current_learner_addrs is ['127.0.0.1:9999']
+2025-07-01 19:43:07.427 | INFO | PID:326 | aisrv_server_standard.before_run:837 - aisrv aisrvhandle start success at pid 326
+2025-07-01 19:43:07.436 | INFO | PID:326 | model_wrapper_common.create_standard_model_wrapper:99 - aisrv policy_name train_one, algo dynamic_programming, model_wrapper is StandardModelWrapperPytorch
+2025-07-01 19:43:07.441 | INFO | PID:326 | agent.save_model:108 - aisrv save model /data/ckpt/gorge_walk_v2_dynamic_programming/model.ckpt-0.npy successfully
+2025-07-01 19:43:07.477 | INFO | PID:326 | env_proxy_lazy.__init__:54 - aisrv env proxy, zmq_client connect to 172.19.0.6:5566 success, client_id 3156422
+2025-07-01 19:43:07.482 | INFO | PID:326 | kaiwu_rl_helper_standard.start_agent:1017 - aisrv kaiwu_rl_helper start agent 0 with train_one
+2025-07-01 19:43:07.493 | INFO | PID:326 | train_workflow.workflow:43 - aisrv Start Training...
+2025-07-01 19:43:07.549 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 0
+2025-07-01 19:43:07.796487: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-01 19:43:07.852118: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-07-01 19:43:07.869 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 10
+2025-07-01 19:43:08.183 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 20
+2025-07-01 19:43:08.274402: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-07-01 19:43:08.277383: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-07-01 19:43:08.510 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 30
+2025-07-01 19:43:08.860 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 40
+2025-07-01 19:43:09.199 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 50
+2025-07-01 19:43:09.548 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 60
+2025-07-01 19:43:09.648484: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-07-01 19:43:09.882 | INFO | PID:326 | algorithm.value_iteration:133 - aisrv Iteration 70
+2025-07-01 19:43:10.026 | INFO | PID:326 | train_workflow.workflow:56 - aisrv Training time cost: 2.5289463996887207 s
+2025-07-01 19:43:10.037 | INFO | PID:326 | agent.save_model:108 - aisrv save model /data/user_ckpt_dir/gorge_walk_v2_dynamic_programming/model.ckpt-1.npy successfully
+2025-07-01 19:43:10.063 | INFO | PID:326 | train_workflow.workflow:72 - aisrv training_metrics is {'basic': {'train_global_step': 0, 'load_model_succ_cnt': 0, 'sample_receive_cnt': 0, 'episode_cnt': 0, 'sample_production_and_consumption_ratio': 0, 'predict_succ_cnt': 0}, 'algorithm': {'reward': 0}, 'env': {'total_score': 0, 'treasure_score': 0, 'max_steps': 0, 'finished_steps': 0, 'total_treasures': 0, 'collected_treasures': 0, 'treasure_random': 0}, 'diy': {'diy_1': 0, 'diy_2': 0, 'diy_3': 0, 'diy_4': 0, 'diy_5': 0}}
+2025-07-01 19:43:10.068 | INFO | PID:326 | kaiwu_rl_helper_standard.workflow:507 - aisrv kaiwu_rl_helper finally
+2025-07-01 19:43:10.860 | INFO | PID:324 | reverb_util.__init__:22 - aisrv learner_proxy reverb client Client, server_address=127.0.0.1:9999 127.0.0.1:9999 connect to reverb server
+2025-07-01 19:43:10.862 | INFO | PID:324 | learner_proxy.before_run:118 - learner_proxy send reverb server use reverb, tables is ['reverb_replay_buffer_table_0']
+2025-07-01 19:43:10.865 | INFO | PID:324 | learner_proxy.before_run:155 - learner_proxy zmq client connect at 127.0.0.1:9997 with client_id 65450694
+2025-07-01 19:43:10.874 | INFO | PID:324 | learner_proxy.before_run:174 - learner_proxy policy_name: train_one, start success at pid 324
+2025-07-01 19:43:10.878 | INFO | PID:324 | learner_proxy.run_once:276 - learner_proxy send process_stop data to learner
+2025-07-01 19:43:10.883 | INFO | PID:324 | learner_proxy.run_once:287 - learner_proxy recv process_stop data result from learner success
+2025-07-01 19:43:10.891 | INFO | PID:342 | monitor_proxy_process.before_run:73 - aisrv monitor_proxy process start success at pid is 342
+2025-07-01 19:43:34.600 | INFO | PID:326 | aisrv_server_standard.handle_sigterm:910 - aisrv aisrv_handle 326 is starting to handle the SIGTERM signal.
+2025-07-01 19:43:35.602 | INFO | PID:326 | kaiwu_rl_helper_standard.stop:904 - aisrv kaiwu_rl_helper success stop
+2025-07-01 19:43:35.607 | INFO | PID:326 | kaiwu_rl_helper_standard.handle_sigterm:1078 - aisrv kaiwu_rl_helper 326 is starting to handle the SIGTERM signal.
+2025-07-01 19:43:35.610 | INFO | PID:326 | standard_model_wrapper_pytorch.save_param_detail:222 - aisrv model.ckpt-1 already exists

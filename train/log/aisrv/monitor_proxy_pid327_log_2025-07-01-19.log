@@ -1,0 +1,1 @@
+{"time": "2025-07-01 19:43:07.402273", "level": "INFO", "message": "aisrv monitor_proxy process start success at pid is 327", "file": "monitor_proxy_process.py", "line": "73", "module": "aisrv", "process": "monitor_proxy_process", "function": "before_run", "stack": "", "pid": 327}
